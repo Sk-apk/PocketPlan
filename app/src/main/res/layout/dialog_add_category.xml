@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Category Name Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@color/primary"
+            app:hintTextColor="@color/primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCategoryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pocket Name (e.g., Groceries)"
+                android:inputType="textCapWords"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Color Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Choose a Color"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgColors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbPurple"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Purple"
+                android:tag="#8B7BA8"
+                android:buttonTint="@color/primary" />
+
+            <RadioButton
+                android:id="@+id/rbBlue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Blue"
+                android:tag="#4A90E2"
+                android:buttonTint="#4A90E2" />
+
+            <RadioButton
+                android:id="@+id/rbGreen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Green"
+                android:tag="#4CAF50"
+                android:buttonTint="@color/success" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbOrange"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Orange"
+                android:tag="#FF9800"
+                android:buttonTint="@color/warning" />
+
+            <RadioButton
+                android:id="@+id/rbRed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Red"
+                android:tag="#F44336"
+                android:buttonTint="@color/error" />
+
+            <RadioButton
+                android:id="@+id/rbPink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pink"
+                android:tag="#E91E63"
+                android:buttonTint="#E91E63" />
+
+        </RadioGroup>
+
+        <!-- Icon Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Choose an Icon"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgIcons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbGroceries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🛒 Groceries"
+                android:tag="groceries" />
+
+            <RadioButton
+                android:id="@+id/rbEntertainment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎬 Entertainment"
+                android:tag="entertainment" />
+
+            <RadioButton
+                android:id="@+id/rbTransport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🚗 Transport"
+                android:tag="transport" />
+
+            <RadioButton
+                android:id="@+id/rbHealth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💊 Health"
+                android:tag="health" />
+
+            <RadioButton
+                android:id="@+id/rbBills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💡 Bills"
+                android:tag="bills" />
+
+            <RadioButton
+                android:id="@+id/rbSavings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💰 Savings"
+                android:tag="savings" />
+
+            <RadioButton
+                android:id="@+id/rbFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🍔 Food & Dining"
+                android:tag="food" />
+
+            <RadioButton
+                android:id="@+id/rbShopping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🛍️ Shopping"
+                android:tag="shopping" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>

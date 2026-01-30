@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">PocketPlan</string>
+
+
+    <!-- Authentication Strings -->
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="create_account">Create Account</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+
+    <!-- Tagline -->
+    <string name="app_tagline">Smart Budgeting, Made Simple</string>
+    <string name="app_subtitle">Track your spending and achieve your financial goals</string>
+
+    <!-- Error Messages -->
+    <string name="error_empty_username">Please enter a username</string>
+    <string name="error_empty_password">Please enter a password</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_login_failed">Invalid username or password</string>
+    <string name="error_registration_failed">Registration failed. Username may already exist.</string>
+    <string name="error_username_exists">Username already exists</string>
+
+    <!-- Success Messages -->
+    <string name="success_registration">Account created successfully!</string>
+    <string name="success_login">Welcome back!</string>
+</resources>
